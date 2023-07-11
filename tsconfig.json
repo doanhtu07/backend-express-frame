@@ -9,7 +9,8 @@
     "outDir": "dist",
     "baseUrl": ".",
     "paths": {
-      "*": ["node_modules/*"]
+      "*": ["node_modules/*"],
+      "@/*": ["src/*"] // Import shortcut for '/src' folder
     },
     "typeRoots": ["@types", "node_modules/@types"],
 
