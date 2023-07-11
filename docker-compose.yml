@@ -1,0 +1,19 @@
+version: "3.8"
+
+services:
+  db:
+    image: postgres
+    restart: always
+    ports:
+      # https://stackoverflow.com/questions/37775702/changing-a-postgres-containers-server-port-in-docker-compose
+      - 5432:5432
+    environment:
+      # https://hub.docker.com/_/postgres: Default values for these values in Docker
+      POSTGRES_DB: backend_db
+      POSTGRES_USER: backend_user
+      POSTGRES_PASSWORD: backend_password
+    volumes:
+      - db:/var/lib/postgresql/data
+
+volumes:
+  db:

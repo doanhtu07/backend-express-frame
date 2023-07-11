@@ -1,0 +1,51 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "repository": "https://github.com/doanhtu07/vivacity-backend.git",
+  "author": "doanhtu07 <doanhtu07@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest --detectOpenHandles --silent=false",
+    "dev": "nodemon --watch './src/**/*.ts' --exec 'ts-node' ./src/index.ts",
+    "build": "yarn pdep && tsc",
+    "start": "node ./dist/index.js",
+    "dock": "docker-compose up -d",
+    "pdev": "prisma migrate dev",
+    "pdep": "prisma migrate deploy",
+    "pgen": "prisma generate",
+    "lint:check": "npx eslint --ext .js,.ts .",
+    "lint": "npx eslint --fix --ext .js,.ts .",
+    "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\""
+  },
+  "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/body-parser": "^1.19.2",
+    "@types/cors": "^2.8.13",
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^4.17.17",
+    "@types/jest": "^29.5.2",
+    "@types/supertest": "^2.0.12",
+    "@typescript-eslint/eslint-plugin": "^5.61.0",
+    "@typescript-eslint/parser": "^5.61.0",
+    "dotenv": "^16.3.1",
+    "eslint": "^8.44.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-perfectionist": "^1.4.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "jest": "^29.6.1",
+    "jest-mock-extended": "^3.0.4",
+    "nodemon": "^2.0.22",
+    "prettier": "^3.0.0",
+    "prisma": "^4.16.2",
+    "supertest": "^6.3.3",
+    "ts-jest": "^29.1.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "@prisma/client": "^4.16.2",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.2"
+  }
+}
