@@ -1,7 +1,7 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "repository": "https://github.com/doanhtu07/vivacity-backend.git",
+  "repository": "https://github.com/doanhtu07/backend-express-frame.git",
   "author": "doanhtu07 <doanhtu07@gmail.com>",
   "license": "MIT",
   "scripts": {
