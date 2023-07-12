@@ -33,6 +33,8 @@ But the good thing is no one needs to know everything in order to start. Just ju
   - Eslint
   - Prettier
   - Prisma
+  - Dotenv Official +Vault
+  - shell-format
   - Docker (Optional)
 
 ## Env File
