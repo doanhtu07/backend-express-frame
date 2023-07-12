@@ -8,6 +8,7 @@
 - Prisma ORM
 - Jest Testing
 - Auto Lint + Format
+- Husky Pre-commit Hook
 
 ## Introduction
 

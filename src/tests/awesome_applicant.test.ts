@@ -1,8 +1,9 @@
-import { ExpressUser } from "../utils/Types";
-import App from "../app";
-import supertest from "supertest";
-import { prismaMock } from "../prisma/mock";
 import { User } from "@prisma/client";
+import supertest from "supertest";
+
+import App from "../app";
+import { prismaMock } from "../prisma/mock";
+import { ExpressUser } from "../utils/Types";
 
 describe("GET /about", () => {
   // Run once before all the tests declared below

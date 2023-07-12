@@ -1,6 +1,7 @@
 import * as dotenv from "dotenv";
 import fs from "fs";
 import path from "path";
+
 import App from "./app";
 
 const NODE_ENV = process.env.NODE_ENV || "development";

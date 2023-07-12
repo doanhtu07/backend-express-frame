@@ -1,4 +1,5 @@
 import cors from "cors";
+
 import { ErrorWrap } from "./utils/Error";
 
 const whitelist = [process.env.FRONTEND_HOST];

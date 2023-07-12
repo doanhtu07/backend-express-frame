@@ -1,12 +1,13 @@
+import { User } from "@prisma/client";
+import bodyParser from "body-parser";
 import cors from "cors";
 import express, { Express } from "express";
-import { corsOptions } from "./cors";
-import { ErrorWrap } from "./utils/Error";
-import { User } from "@prisma/client";
-import { convertExpressUser } from "./utils/Types";
 import * as http from "http";
+
+import { corsOptions } from "./cors";
 import prisma from "./prisma/client";
-import bodyParser from "body-parser";
+import { ErrorWrap } from "./utils/Error";
+import { convertExpressUser } from "./utils/Types";
 
 export default class App {
   server: http.Server | null | undefined = null;

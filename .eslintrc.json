@@ -20,7 +20,7 @@
 
   "plugins": ["@typescript-eslint", "prettier", "perfectionist"],
 
-  "ignorePatterns": ["node_modules", "build", "dist", "public"],
+  "ignorePatterns": ["node_modules", "build", "dist", "public", "@types"],
 
   "rules": {
     "@typescript-eslint/no-unused-vars": [
